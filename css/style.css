@@ -1,8 +1,19 @@
+@font-face {
+	font-family: 'Bogart';
+	src:  url('../assets/fonts/bogart-med.woff2') format('woff2')
+  }
+
+@font-face {
+	font-family: 'Biotif';
+	src:  url('../assets/fonts/biotif.woff2') format('woff2')
+  }
+
 body {
 	background-color: rgb(17, 17, 17);
-	font-family: 'Roboto', sans-serif;
 	padding: 0;
 	margin: 0;
+
+	font-family: 'Biotif', Fallback, 'Roboto', sans-serif;
 }
 
 section{
@@ -11,6 +22,7 @@ section{
 
 #intro{
 	padding-top: 100px;
+	text-align: center;
 }
 
 #about{
@@ -40,10 +52,6 @@ section{
 	font-weight: 300;
 	text-decoration: none;
 	color: white;
-
-	/* background: linear-gradient(90deg, rgba(152,69,232,1) 31%, rgba(51,210,255,1) 52%, rgba(221,87,137,1) 76%);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 .nav {
@@ -58,6 +66,20 @@ section{
 }
 
 .link-nav:hover{
+	color: white;
+	border-bottom: 0.3rem solid #DD5789;
+}
+
+#intro .name {
+	font-family: 'Bogart';
+	/* font-size: 600rem; */
+
+	background: linear-gradient(90deg, rgba(152,69,232,1) 31%, rgba(51,210,255,1) 52%, rgba(221,87,137,1) 76%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#intro .intro-info {
 	color: white;
 }
 
@@ -97,11 +119,11 @@ section{
 
 .find-me-icons-top{
 	font-size: 32px;
-	color: white;
+	color: #33d3ff;
 }
 
 .find-me-icons-top:hover{
-	color: blue;
+	color: #DD5789;
 }
 
 .badge{
