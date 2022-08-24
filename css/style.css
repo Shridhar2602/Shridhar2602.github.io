@@ -21,8 +21,9 @@ section{
 }
 
 #intro{
-	padding-top: 100px;
+	/* padding-top: 100px; */
 	text-align: center;
+	margin-bottom: auto;
 }
 
 #about{
@@ -46,12 +47,29 @@ section{
 	font-weight: 600;
 }
 
+.hero {
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+
+#navbar {
+	margin-bottom: auto;
+}
+
+
+
 .link-nav {
 	padding: 20px 20px 16px;
 	line-height: 1;
 	font-weight: 300;
 	text-decoration: none;
 	color: white;
+
+	transition: 0.1s ease 0s;
 }
 
 .nav {
@@ -62,7 +80,7 @@ section{
 }
 
 .nav-div {
-	font-size: xx-large;
+	font-size: large;
 }
 
 .link-nav:hover{
@@ -72,15 +90,36 @@ section{
 
 #intro .name {
 	font-family: 'Bogart';
-	/* font-size: 600rem; */
+	font-size: 6vw;
 
-	background: linear-gradient(90deg, rgba(152,69,232,1) 31%, rgba(51,210,255,1) 52%, rgba(221,87,137,1) 76%);
+	background: linear-gradient(90deg, rgba(152,69,232,1) 5%, rgba(51,210,255,1) 50%, rgba(221,87,137,1) 96%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #intro .intro-info {
 	color: white;
+	font-size: 2vw;
+}
+
+#intro .hello {
+	width: 25vw;
+}
+
+@media (max-width: 768px)
+{
+	#intro .hello {
+		width: 50vw;
+	}
+
+	#intro .name {
+		font-size: 12vw;
+	}
+
+	#intro .intro-info {
+		color: white;
+		font-size: 4.5vw;
+	}
 }
 
 .card{
@@ -120,6 +159,7 @@ section{
 .find-me-icons-top{
 	font-size: 32px;
 	color: #33d3ff;
+	padding: 0 2px 0 2px;	
 }
 
 .find-me-icons-top:hover{
