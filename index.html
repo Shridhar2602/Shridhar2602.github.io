@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shridhar Sharma || Portfolio</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet"> 
 
 
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -21,7 +22,7 @@
 			
 		<div id="navbar" class="container-md">
 			<div class="nav">
-				<div class="nav-div"><a class="link-nav" href="#intro">About</a></div>
+				<div class="nav-div"><a class="link-nav" href="#about">About</a></div>
 				<div class="nav-div"><a class="link-nav" href="#about">Education</a></div>
 				<div class="nav-div"><a class="link-nav" href="#projects">Projects</a></div>
 			</div>
@@ -69,18 +70,100 @@
 		<!-- about section -->
 	
 		<section id="about">
-			<div class="container-lg py-5 px-4">
+			<!-- <div class="container-lg py-5 px-4">
 				<div class="row">
 					<div class="col-md-5 text-center text-md-center">
 						<h1>
 							<div class="display-3">About me</div>
 						</h1>
 					</div>
-	
+				</div>
+				<div class="row">
 					<div class="col-md-5 text-center text-md-start">
-						<p class="fs-5">I am currently pursuing Integrated M.Tech (B.Tech + M.Tech) in Computer Science from IIIT Bangalore.</p>
+						<p class="fs-5">
+							I am an undergraduate student, currently in my third year, pursuing Integrated M.Tech (B.Tech + M.Tech) in Computer Science 
+							and Engineering from IIIT Bangalore.
+						</p>
+						<p class="fs-5">
+							I am fascinated by anything tech
+						</p>
 					</div>
 				</div>
+			</div> -->
+	
+			<div class="container-lg min-vh-100 py-3 py-md-0">
+
+			<div class="container-flex">
+
+				<div class="row text-center pb-4 pb-md-5 mb-md-5 mx-auto">
+					<div class="col heading">
+						<h1 class="display-2">
+							About me
+						</h1>
+						<div class="heading-bottom"></div>
+					</div>
+					
+				</div>
+
+				<div class="row second-row justify-content-evenly mx-2">
+					<div class="col-md-5 description">
+
+						<h2 class="typer">
+							I'm a <a href="" class="typewrite" data-period="2000" data-type='[ "Student", "Programmer", "Tech Enthusiast", "Reader"]'>
+							   <span class="wrap"></span>
+							 </a>.
+						</h2>
+						
+						<div class="mt-4">
+						<p class="fs-6">
+							I am a third year undergraduate student pursuing Integrated M.Tech (B.Tech + M.Tech) in Computer Science at IIIT Bangalore.
+							I love coding, developing stuff and am currently exploring different domains in CS. I am always excited by anything tech.
+							
+						</p>
+						<p class="fs-6">
+							In my free time you'll mostly find me with my nose buried in a book, vibing to music or dreaming 
+							about football. 
+						</p>
+						<p class="fs-6">
+							Check out my 
+							<a class="about-link" href="">Goodreads</a>
+							or 
+							<a class="about-link" href="">Last.fm</a>
+							to see what I am currently reading or listening!
+						</p>
+						</div>
+					</div>
+					<div class="col-md-5 skills mt-3 mt-md-0">
+						<h2>
+							I've Got Some <span>Skills</span>.
+						</h2>
+
+						<div class="row mt-4">
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/python-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/c-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/cplusplus-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/java-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/html5-original-wordmark.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/css3-original-wordmark.svg" width="90%"></div>
+						</div>
+						<div class="row mt-2">
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/javascript-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/mysql.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/git-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/vscode-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/linux-original.svg" width="90%"></div>
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/github.svg" width="90%"></div>
+						</div>
+						<div class="row mt-2">
+							<div class="col-2"><img class="skill-icon" src="./assets/icons/figma.svg" width="90%"></div>
+							
+							
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
 			</div>
 		</section>
 	
@@ -195,6 +278,7 @@
 	
 		<!-- JavaScript Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="./js/myscript.js"></script>
 
 </body>
 </html>

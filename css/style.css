@@ -8,12 +8,18 @@
 	src:  url('../assets/fonts/biotif.woff2') format('woff2')
   }
 
+:root {
+	--main-bg-color: rgb(17, 17, 17);
+	--alt-bg-color: #191919;
+}
+  
+
 body {
-	background-color: rgb(17, 17, 17);
+	background-color: var(--main-bg-color);
 	padding: 0;
 	margin: 0;
 
-	font-family: 'Biotif', Fallback, 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 section{
@@ -27,7 +33,6 @@ section{
 }
 
 #about{
-	background-color: antiquewhite;
 	
 }
 
@@ -120,6 +125,68 @@ section{
 		color: white;
 		font-size: 4.5vw;
 	}
+}
+
+/* About section */
+
+#about {
+	background-color: var(--alt-bg-color);
+	color: white;
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+}
+
+#about .display-2{
+	background: linear-gradient(90deg, rgba(152,69,232,1) 5%, rgba(51,210,255,1) 50%, rgba(221,87,137,1) 96%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+	font-family: 'Bogart';
+}
+
+#about .description {
+	/* border: 2px solid red; */
+
+	font-size: 20px;
+	line-height: 140%;
+}
+
+#about .skills {
+	/* border: 2px solid red; */
+}
+
+.typer {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 300;
+}
+
+.typer a {
+	text-decoration: none;
+	color: #4AF626;
+	font-weight: 300;
+}
+
+#about h2 {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 300;  
+}
+
+#about span {
+	color: #4AF626;
+}
+
+.about-link {
+	color: #33d3ff;
+	text-decoration: none;
+}
+
+.about-link:hover {
+	color: #DD5789;
 }
 
 .card{
