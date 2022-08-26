@@ -11,8 +11,9 @@
 :root {
 	--main-bg-color: rgb(17, 17, 17);
 	--alt-bg-color: #191919;
+
+	--main-text-color: white;
 }
-  
 
 body {
 	background-color: var(--main-bg-color);
@@ -21,6 +22,19 @@ body {
 
 	font-family: 'Montserrat', sans-serif;
 }
+
+.high-emphasis {
+	opacity: 87%;
+}
+
+.med-emphasis {
+	opacity: 70%;
+}
+
+.low-emphasis {
+	opacity: 38%;
+}
+
 
 section{
 	/* border-top: 6px solid black; */
@@ -33,23 +47,13 @@ section{
 }
 
 #about{
-	
-}
 
-#projects{
-	background-image: url("/assets/background.svg");
-	background-image: url("../assets/background.svg");
-	background-repeat: repeat;
 }
 
 #footer{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: #c4c4c4;
-}
-
-.display-2{
-	font-weight: 600;
 }
 
 .hero {
@@ -72,7 +76,7 @@ section{
 	line-height: 1;
 	font-weight: 300;
 	text-decoration: none;
-	color: white;
+	color: var(--main-text-color);
 
 	transition: 0.1s ease 0s;
 }
@@ -141,19 +145,18 @@ section{
 	justify-content: center;
 }
 
-#about .display-2{
-	background: linear-gradient(90deg, rgba(152,69,232,1) 5%, rgba(51,210,255,1) 50%, rgba(221,87,137,1) 96%);
+#about .heading{
+	/* background: linear-gradient(90deg, rgba(152,69,232,1) 5%, rgba(51,210,255,1) 50%, rgba(221,87,137,1) 96%);
 	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+}
 
-	font-family: 'Bogart';
+#about .display-3 {
+	font-weight: 500;
 }
 
 #about .description {
 	/* border: 2px solid red; */
-
-	font-size: 20px;
-	line-height: 140%;
 }
 
 #about .skills {
@@ -162,18 +165,18 @@ section{
 
 .typer {
 	font-family: 'Source Code Pro', monospace;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .typer a {
 	text-decoration: none;
 	color: #4AF626;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #about h2 {
 	font-family: 'Source Code Pro', monospace;
-	font-weight: 300;  
+	font-weight: 400;  
 }
 
 #about span {
@@ -189,28 +192,96 @@ section{
 	color: #DD5789;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* Projects section */
+
+#projects{
+	background-color: var(--main-bg-color);
+}
+
+#projects .heading{
+	color: var(--main-text-color);
+}
+
+#projects .display-3 {
+	font-weight: 500;
+}
+
+
 .card{
-	border: 4px solid black;
-	box-shadow: 8px 8px 0 0 black;
+	background-color: #1D1D1D;
+	color: var(--main-text-color);
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .card-header{
-	border-bottom: 4px solid black;
 	font-size: xx-large;
-	font-weight: 500;
-	background-color: #c4c4c4;
+}
+
+#projects .display-6 {
+	font-weight: 400;
 }
 
 .card-footer{
-	background-color: white;
+	
 	padding: 0;
 }
 
-.card-text{
-	font-size: x-large
+.btn.disabled {
+	opacity: 38%;
+	margin-top: 5px;
 }
+
+
+.badge:hover {
+	color: var(--main-bg-color);
+}
+
+#projects .btn {
+	background-color: #1D1D1D;
+	color: var(--main-text-color);
+}
+
+#projects .btn:hover {
+	background-color: white;
+	color: var(--main-bg-color);
+	opacity: 70%;
+}
+
+#projects img {
+	filter: brightness(.8) contrast(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .find-me-icons{
 	font-size: 32px;
@@ -231,11 +302,6 @@ section{
 
 .find-me-icons-top:hover{
 	color: #DD5789;
-}
-
-.badge{
-	color: black;
-	font-size: 1rem;
 }
 
 path{
