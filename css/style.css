@@ -3,10 +3,9 @@
 	src:  url('../assets/fonts/bogart-med.woff2') format('woff2')
   }
 
-@font-face {
-	font-family: 'Biotif';
-	src:  url('../assets/fonts/biotif.woff2') format('woff2')
-  }
+html {
+    scroll-behavior: smooth !important;
+}
 
 :root {
 	--main-bg-color: rgb(17, 17, 17);
@@ -35,20 +34,13 @@ body {
 	opacity: 38%;
 }
 
-
-section{
-	/* border-top: 6px solid black; */
-}
-
 #intro{
 	/* padding-top: 100px; */
 	text-align: center;
 	margin-bottom: auto;
 }
 
-#about{
-
-}
+/* Front page */
 
 .hero {
 	min-height: 100vh;
@@ -62,8 +54,6 @@ section{
 #navbar {
 	margin-bottom: auto;
 }
-
-
 
 .link-nav {
 	padding: 20px 20px 16px;
@@ -89,6 +79,12 @@ section{
 .link-nav:hover{
 	color: white;
 	border-bottom: 0.3rem solid #DD5789;
+}
+
+a:active, a:focus {
+	outline: 0;
+	border: none;
+	-moz-outline-style: none;
 }
 
 #intro .name {
@@ -139,24 +135,6 @@ section{
 	justify-content: center;
 }
 
-#about .heading{
-	/* background: linear-gradient(90deg, rgba(152,69,232,1) 5%, rgba(51,210,255,1) 50%, rgba(221,87,137,1) 96%);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-#about .display-3 {
-	font-weight: 500;
-}
-
-#about .description {
-	/* border: 2px solid red; */
-}
-
-#about .skills {
-	/* border: 2px solid red; */
-}
-
 .typer {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 400;
@@ -186,15 +164,49 @@ section{
 	color: #DD5789;
 }
 
+/* Education Section */
+
+#education {
+	background-color: var(--alt-bg-color);
+	color: white;
+}
+
+.timeline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
+.timeline-with-icons {
+	border-left: 1px solid hsl(0, 0%, 90%);
+	position: relative;
+	list-style: none;
+	opacity: 67%;
+  }
 
+  .timeline-with-icons .timeline-item {
+	position: relative;
+  }
 
+  .timeline-with-icons .timeline-item:after {
+	position: absolute;
+	display: block;
+	top: 0;
+  }
 
-
-
-
-
+  .timeline-with-icons .timeline-icon {
+	position: absolute;
+	left: -48px;
+	background-color: hsl(217, 88.2%, 90%);
+	color: hsl(217, 88.8%, 35.1%);
+	border-radius: 50%;
+	height: 31px;
+	width: 31px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
 
 
 /* Projects section */
@@ -208,7 +220,7 @@ section{
 }
 
 #projects .display-3 {
-	font-weight: 500;
+	
 }
 
 @media (min-width: 768px)
@@ -274,19 +286,16 @@ section{
 	filter: brightness(.8) contrast(1.2);
 }
 
-
-
-
-
+#projects .winner {
+	color: #B00020;
+	opacity: 100%;
+}
 
 /* Footer section */
 
 #footer{
 	background-color: var(--alt-bg-color);
 	color: var(--main-text-color);
-
-	/* font-family: 'Source Code Pro', monospace; */
-
 }
 
 #footer a {
@@ -296,10 +305,6 @@ section{
 
 #footer a:hover {
 	color: #33d3ff
-}
-
-#footer .copyright {
-	
 }
 
 #me {
@@ -331,31 +336,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .find-me-icons-top{
 	font-size: 32px;
 	color: #33d3ff;
@@ -379,3 +359,13 @@ path{
   to {
 	stroke-dashoffset: 0;
 }}
+
+
+header {
+	position: relative;
+	z-index: -1;
+}
+
+.parallax {
+	z-index: 1;
+}
