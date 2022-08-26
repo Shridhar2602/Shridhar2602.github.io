@@ -50,12 +50,6 @@ section{
 
 }
 
-#footer{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #c4c4c4;
-}
-
 .hero {
 	min-height: 100vh;
 	width: 100vw;
@@ -217,6 +211,23 @@ section{
 	font-weight: 500;
 }
 
+@media (min-width: 768px)
+{
+	#projects .container-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	
+		margin-top: auto;
+	}
+	
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
 
 .card{
 	background-color: #1D1D1D;
@@ -268,31 +279,82 @@ section{
 
 
 
+/* Footer section */
 
+#footer{
+	background-color: var(--alt-bg-color);
+	color: var(--main-text-color);
 
+	/* font-family: 'Source Code Pro', monospace; */
 
+}
 
+#footer a {
+	text-decoration: none;
+	color: var(--main-text-color);
+}
 
+#footer a:hover {
+	color: #33d3ff
+}
 
+#footer .copyright {
+	
+}
 
+#me {
+	color: #33d3ff !important;
+}
 
-
-
-
-
-
-
+#me:hover {
+	color: #DD5789 !important;
+}
 
 .find-me-icons{
-	font-size: 32px;
+	font-size: 64px;
 	color: black;
-	padding: 0;
+	padding: 0 2px 0 2px;
+
+}
+
+@media (max-width: 768px)
+{
+	.find-me-icons{
+		font-size: 32px;
+	}
 }
 
 .find-me-icons:hover{
 	
 	color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .find-me-icons-top{
 	font-size: 32px;
@@ -304,10 +366,13 @@ section{
 	color: #DD5789;
 }
 
+
+/* Animation */
+
 path{
 	stroke-dasharray: 2000;
 	stroke-dashoffset: 2000;
-	animation: dash 3s linear forwards;
+	animation: dash 3.5s ease-in-out forwards;
 }
 
 @keyframes dash {
